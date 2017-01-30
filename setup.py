@@ -8,4 +8,5 @@ setup(name='ratiodistribution',
       author_email='mayghalvijapura@live.co.uk',
       license='MIT',
       packages=['ratiodistribution'],
+      install_requires=['numpy','scipy','matplotlib'],
       zip_safe=False)
