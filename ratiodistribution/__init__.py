@@ -1,14 +1,3 @@
-#Motivation: A regession has predicted a value for variable X (mu_x) with error e_x
-#Similarly, another independent regression has predicted a value for value Y (mu_y) with error e_y
-
-#X = mu_x +- e_x
-#Y = mu_y +- e_y
-
-#Question: If we define Z:=X/Y. What is the error bounds of Z? ie e_z?
-
-#See: https://en.wikipedia.org/wiki/Ratio_distribution#Gaussian_ratio_distribution
-#for mathematical information
-
 import numpy as np
 
 from scipy.integrate import quad as _quad
@@ -93,11 +82,11 @@ def error(mu_x, e_x, mu_y, e_y, confidence=0.95):
     
     mid = str(exp_z)
     
-    print('Bounds: [' + mid + '-' + str(e_l) + ',' + mid + '+' + str(e_u) +']')
+    #print('Bounds: [' + mid + '-' + str(e_l) + ',' + mid + '+' + str(e_u) +']')
     
     return [exp_z-e_l, e_u+exp_z]
 #=============================================================== plot pdf
-def plotpdf(mu_x, e_x, mu_y, e_y, confidence=0.95):
+def plotPdf(mu_x, e_x, mu_y, e_y, confidence=0.95):
     
     sd_x = sdFromError(e_x,confidence)   #Calculate standard deviations from error bounds
     sd_y = sdFromError(e_y,confidence)
