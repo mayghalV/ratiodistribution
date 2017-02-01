@@ -11,11 +11,11 @@ X = mu_x +- e_x
 Y = mu_y +- e_y
 
 ##Questions
-*If we define Z as the ratio of X and Y, ie Z:=X/Y, what is the distribution of this ratio?
-*What are the error bounds of Z with a% confidence, ie e_z? (0%<a<100%)
+-If we define Z as the ratio of X and Y, ie Z:=X/Y, what is the distribution of this ratio?  
+-What are the error bounds of Z with a% confidence, ie e_z? (0%<a<100%)
 
 ##Credit and more information
-This package implements the formulas from Hinkley, D. V. (December 1969). "On the Ratio of Two Correlated Normal Random Variables". Biometrika. 56 (3): 635–639.
+This package implements the formulas from Hinkley, D. V. (December 1969). "On the Ratio of Two Correlated Normal Random Variables". Biometrika. 56 (3): 635–639.  
 Also see https://en.wikipedia.org/wiki/Ratio_distribution#Gaussian_ratio_distribution for more information.
 
 ##Methods:
