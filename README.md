@@ -7,8 +7,8 @@ Similarly, another independent regression has predicted a value for variable Y  
 
 ie:
 
-'''X = mu_x +- e_x  
-Y = mu_y +- e_y'''
+```X = mu_x ± e_x  
+Y = mu_y ± e_y```
 
 ##Questions
 -If we define Z as the ratio of X and Y, ie Z:=X/Y, what is the distribution of this ratio?  
