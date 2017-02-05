@@ -7,8 +7,8 @@ Similarly, another independent regression has predicted a value for variable Y  
 
 ie:
 
-X = mu_x +- e_x
-Y = mu_y +- e_y
+'''X = mu_x +- e_x  
+Y = mu_y +- e_y'''
 
 ##Questions
 -If we define Z as the ratio of X and Y, ie Z:=X/Y, what is the distribution of this ratio?  
@@ -27,7 +27,7 @@ confidence: % confidence of error bound (float)
 ####Returns:
 Standard deviation of the distribution of errors (float)
 
-
+---
 ###ratiodistribution.pdf(z, mu_x, sd_x, mu_y, sd_y)
 Probability density function for ratio distribution
 ####Parameters:
@@ -39,6 +39,7 @@ sd_y: standard deviation of the distribution of errors for Y (float)
 ####Returns:
 Probability density function (float)
 
+---
 ###ratiodistribution.cdf(z, mu_x, sd_x, mu_y, sd_y)  
 Cumulative distribution function for ratio distribution
 ####Parameters:
@@ -50,6 +51,7 @@ sd_y: standard deviation of the distribution of errors for Y (float)
 ####Returns:
 Cumulative distribution function (float)
 
+---
 ###ratiodistribution.invCdf(cdf, mu_x, sd_x, mu_y, sd_y)
 Inverse cumulative distribution function for ratio distribution
 ####Parameters:
@@ -61,6 +63,7 @@ sd_y: standard deviation of the distribution of errors for Y (float)
 ####Returns:
 z such that P(Z<=z)=cdf (float)  
 
+---
 ###ratiodistribution.error(mu_x, sd_x, mu_y, sd_y, confidence=0.95)
 Calculates the error bounds of Z with confidence *confidence*. Note given the nature of the ratio distribution the size of the errors might not be symmetric around the mean.
 ####Parameters:
@@ -72,7 +75,7 @@ confidence: confidence interval of e_x, e_y and new bounds
 ####Returns:
 [lowerValue, upperValue] at confidence level *confidence* (list of 2 floats)  
 
-
+---
 ###ratiodistribution.plotPdf(mu_x, e_x, mu_y, e_y, confidence=0.95)  
 Plots shape of pdf of Z
 ####Parameters:
@@ -83,3 +86,5 @@ e_y: error in estimation of Y at confidence level *confidence* (float)
 confidence: confidence interval of e_x, e_y  
 ####Returns:
 None
+
+---
