@@ -8,6 +8,7 @@ Similarly, another independent regression has predicted a value for variable Y  
 ie:
 
 ```X = mu_x ± e_x  
+
 Y = mu_y ± e_y```
 
 ##Questions
